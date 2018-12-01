@@ -5,4 +5,5 @@ import { LoginBox } from 'components';
 
 
 storiesOf('LoginBox', module)
-.add('default', () => (<LoginBox/>) );
+.add('default', () => (<LoginBox/>) )
+.add('error', () => (<LoginBox error/>) );
