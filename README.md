@@ -5,7 +5,8 @@
 
 # Technologies
 1. React
-2. Storybook
+2. React Materialize (Material Design Framework)
+3. Storybook
 
 # TODO
 1. Setup Docker
