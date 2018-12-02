@@ -16,3 +16,6 @@
 # How to use
 1. `npm install`
 2. `npm start`
+
+# Nice to know
+- Run tests with `TERM=dumb npm test` to output console logs!
