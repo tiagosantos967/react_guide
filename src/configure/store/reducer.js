@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
+import { reducer as form } from 'redux-form'
 
-const reducers = {}
+const reducers = { form }
 
 const req = require.context('../../components', true, /\.\/.+\/reducer\.js$/)
 

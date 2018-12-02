@@ -29,14 +29,14 @@ describe('LoginBox component', () => {
     let store = mockStore({LoginBox:{ isLoading: true }});
     const wrapper = mount(<LoginBox store={store}/>);
 
-    expect(wrapper.find('Button').length).toBe(1);
+    expect(wrapper.find('Button').length).toBe(0);
   })
 
   it('should show an error \'button\' if the error prop is set', () => {
     let store = mockStore({LoginBox:{ isLoading: true }});
     const wrapper = mount(<LoginBox error store={store}/>);
 
-    expect(wrapper.find('Button').length).toBe(2);
+    expect(wrapper.find('Button').length).toBe(1);
   })
 
   it('should print Email or password wrong on error button', () => {
@@ -44,7 +44,7 @@ describe('LoginBox component', () => {
     //Shallow wrapping doesn’t descend down to sub-components. A full mount also mounts sub-components.
     const wrapper = mount(<LoginBox error store={store}/>);
 
-    expect(wrapper.find('Button').at(1).text()).toBe("Email or password wrong.");
+    expect(wrapper.find('Button').at(0).text()).toBe("Email or password wrong.");
   })
 
 })
@@ -54,8 +54,8 @@ describe('LoginBox actions', () => {
     let store = mockStore({LoginBox:{ isLoading: true }});
     const wrapper = mount(<LoginBox store={store}/>);
 
-    // https://stackoverflow.com/questions/52612845/how-to-test-redux-action-by-onclick-with-enzyme
-    wrapper.find('Button').first().simulate("click");
+    // OLD: https://stackoverflow.com/questions/52612845/how-to-test-redux-action-by-onclick-with-enzyme
+    wrapper.find('LoginForm').props().onSubmit({})
 
     expect(store.getActions().length).toBe(1);
     expect(store.getActions()[0].type).toBe(LOGIN_REQUEST);

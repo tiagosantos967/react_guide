@@ -2,9 +2,11 @@ export const LOGIN_REQUEST = 'LoginBox/LOGIN_REQUEST'
 export const LOGIN_SUCCESS = 'LoginBox/LOGIN_SUCCESS'
 export const LOGIN_ERROR = 'LoginBox/LOGIN_ERROR'
 
-export function login() {
+export function login(email,password) {
     return {
-        type: LOGIN_REQUEST
+        type: LOGIN_REQUEST,
+        email,
+        password
     }
 }
 
