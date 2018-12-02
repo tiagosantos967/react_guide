@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import { LoginPage } from 'components';
 
 import configureStore from './configure/store';
+import api from './services/api'
 
-const store = configureStore()
+const store = configureStore({}, {api})
 
 class App extends Component {
   render() {
