@@ -8,11 +8,12 @@
 2. React Materialize (Material Design Framework)
 3. Storybook
 4. Redux
+5. Sagas
+6. Redux Forms
 
 # TODO
-1. Setup Sagas
-2. Setup Router
-3. Setup Docker
+1. Setup Router
+2. Setup Docker
 
 # How to use
 1. `npm install`
@@ -20,3 +21,7 @@
 
 # Nice to know
 - Run tests with `TERM=dumb npm test` to output console logs!
+
+## Redux Forms
+- https://redux-form.com/6.6.2/examples/simple/
+- https://medium.com/@wlodarczyk_j/tutorial-creating-a-basic-form-with-redux-form-2f8cd51cd40
