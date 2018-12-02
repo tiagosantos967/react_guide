@@ -1,5 +1,6 @@
 export const LOGIN_REQUEST = 'LoginBox/LOGIN_REQUEST'
 export const LOGIN_SUCCESS = 'LoginBox/LOGIN_SUCCESS'
+export const LOGIN_ERROR = 'LoginBox/LOGIN_ERROR'
 
 export function login() {
     return {
@@ -7,9 +8,16 @@ export function login() {
     }
 }
 
-export function success(userName) {
+export function success({username}) {
     return {
         type: LOGIN_SUCCESS,
-        userName
+        username
+    }
+}
+
+export function error({message}) {
+    return {
+        type: LOGIN_ERROR,
+        error: message
     }
 }

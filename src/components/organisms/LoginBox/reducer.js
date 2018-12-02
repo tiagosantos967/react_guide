@@ -1,4 +1,4 @@
-import { LOGIN_REQUEST, LOGIN_SUCCESS } from './actions'
+import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_ERROR } from './actions'
 
 const initialState = {
     isLoading: true
@@ -12,11 +12,19 @@ export default (state = initialState, action) => {
               isLoggingIn: true
             }
         
-        case LOGIN_SUCCESS: 
+        case LOGIN_SUCCESS:
             return {
               ...state,
               isLoggingIn: false,
-              isSuccess: true,
+              success: action.username,
+            }
+        
+        case LOGIN_ERROR:
+            return {
+              ...state,
+              isLoggingIn: false,
+              success: false,
+              error: action.error
             }
 
         default:
