@@ -4,22 +4,19 @@ import { connect } from 'react-redux'
 import { login } from './actions'
 import './index.css'
 
-import { CardPanel, Row, Input, Button } from 'react-materialize'
+import { CardPanel, Button } from 'react-materialize'
+import { LoginForm } from 'components';
 
-const LoginBox = props => {
-    const onLoginClick = () => {
-        console.log('login button has been clicked!')
-        props.login()
+let LoginBox = props => {
+    const onSubmit = ({email, password}) => {
+        console.log('form has been submited!')
+        props.login(email, password);
     }
 
     return (
         <CardPanel className="login-card black-text">
             <h1>Login</h1>
-            <Row>
-                <Input type="email" label="Email" s={12} />
-                <Input type="password" label="Password" s={12} />
-            </Row>
-            <Button onClick={onLoginClick}>Login</Button>
+            <LoginForm onSubmit={onSubmit}/>
             {props.error && <Button className="red white-text" style={{marginTop:'10px'}}>Email or password wrong.</Button>}
         </CardPanel>
     )
@@ -33,5 +30,5 @@ const mapStateToProps = ({LoginBox}, props) => ({
 const mapDispatchToProps = (dispatch) => ({
     login: () => dispatch(login())
 })
-  
+
 export default connect(mapStateToProps, mapDispatchToProps)(LoginBox)
