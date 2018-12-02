@@ -7,11 +7,12 @@
 1. React
 2. React Materialize (Material Design Framework)
 3. Storybook
+4. Redux
 
 # TODO
-1. Setup Docker
-2. Setup Redux
-3. Setup Sagas
+1. Setup Sagas
+2. Setup Router
+3. Setup Docker
 
 # How to use
 1. `npm install`

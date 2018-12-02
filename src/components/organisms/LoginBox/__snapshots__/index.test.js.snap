@@ -3,7 +3,18 @@
 exports[`LoginBox component should render 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <LoginBox />,
+  Symbol(enzyme.__unrendered__): <Connect(LoginBox)
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,113 +28,38 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <h1>
-          Login
-        </h1>,
-        <Row>
-          <Input
-            checked={false}
-            label="Email"
-            s={12}
-            type="email"
-          />
-          <Input
-            checked={false}
-            label="Password"
-            s={12}
-            type="password"
-          />
-        </Row>,
-        <Button
-          node="button"
-        >
-          Login
-        </Button>,
-        undefined,
-      ],
-      "className": "login-card black-text",
+      "isLoading": true,
+      "login": [Function],
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "storeSubscription": Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      },
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Login",
-        },
-        "ref": null,
-        "rendered": "Login",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [
-            <Input
-              checked={false}
-              label="Email"
-              s={12}
-              type="email"
-            />,
-            <Input
-              checked={false}
-              label="Password"
-              s={12}
-              type="password"
-            />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "checked": false,
-              "label": "Email",
-              "s": 12,
-              "type": "email",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "checked": false,
-              "label": "Password",
-              "s": 12,
-              "type": "password",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": "Login",
-          "node": "button",
-        },
-        "ref": null,
-        "rendered": "Login",
-        "type": [Function],
-      },
-      undefined,
-    ],
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -132,113 +68,38 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <h1>
-            Login
-          </h1>,
-          <Row>
-            <Input
-              checked={false}
-              label="Email"
-              s={12}
-              type="email"
-            />
-            <Input
-              checked={false}
-              label="Password"
-              s={12}
-              type="password"
-            />
-          </Row>,
-          <Button
-            node="button"
-          >
-            Login
-          </Button>,
-          undefined,
-        ],
-        "className": "login-card black-text",
+        "isLoading": true,
+        "login": [Function],
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "storeSubscription": Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "get": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": [Function],
+        },
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Login",
-          },
-          "ref": null,
-          "rendered": "Login",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": Array [
-              <Input
-                checked={false}
-                label="Email"
-                s={12}
-                type="email"
-              />,
-              <Input
-                checked={false}
-                label="Password"
-                s={12}
-                type="password"
-              />,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "checked": false,
-                "label": "Email",
-                "s": 12,
-                "type": "email",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "checked": false,
-                "label": "Password",
-                "s": 12,
-                "type": "password",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "Login",
-            "node": "button",
-          },
-          "ref": null,
-          "rendered": "Login",
-          "type": [Function],
-        },
-        undefined,
-      ],
+      "rendered": null,
       "type": [Function],
     },
   ],
