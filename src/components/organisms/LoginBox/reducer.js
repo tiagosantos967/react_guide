@@ -17,6 +17,7 @@ export default (state = initialState, action) => {
               ...state,
               isLoggingIn: false,
               success: action.username,
+              error: false
             }
         
         case LOGIN_ERROR:

@@ -9,7 +9,7 @@ import { LoginForm } from 'components';
 
 let LoginBox = props => {
     const onSubmit = ({email, password}) => {
-        console.log('form has been submited!')
+        console.log('form has been submitted!')
         props.login(email, password);
     }
 
@@ -28,7 +28,7 @@ const mapStateToProps = ({LoginBox}, props) => ({
 })
   
 const mapDispatchToProps = (dispatch) => ({
-    login: () => dispatch(login())
+    login: (email, password) => dispatch(login(email, password))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginBox)

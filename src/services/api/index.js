@@ -4,8 +4,8 @@
 */
 
 export default ({
-    login: (username, password) => {
-        return username === password 
+    login: (email, password) => {
+        return email === password 
         ? Promise.resolve({username: 'TMA'}) 
         : Promise.reject({message: 'Email or password wrong'})
     }
