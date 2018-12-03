@@ -5,11 +5,12 @@
 
 # Technologies
 1. React
-2. React Materialize (Material Design Framework)
-3. Storybook
-4. Redux
-5. Sagas
-6. Redux Forms
+2. Jest and Enzyme for testing
+3. React Materialize (Material Design Framework)
+4. Storybook
+5. Redux
+6. Sagas
+7. Redux Forms
 
 # TODO
 1. Setup Router
